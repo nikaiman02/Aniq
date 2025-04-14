@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashstyle.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Sidebar Section -->
+    <div id="sidebar">
+        <div id="logo">
+            <img src="image/anamuslim1.png" alt="Ana Muslim Logo">
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="browse.html">Browse</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="#" id="logout-btn">Log out</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div id="main-content">
+        <!-- Header Section -->
+        <header>
+            <div class="welcome-message">
+                <h1>Welcome, <span id="username">[User Name]</span>!</h1>
+            </div>
+            <div class="user-info">
+                <p>View your latest activity and reading stats.</p>
+            </div>
+        </header>
+
+        <!-- Book Recommendations Section -->
+        <section id="book-recommendations">
+            <h2>Recommended for You</h2>
+            <div class="book-cards">
+                <div class="book-card">
+                    <a href="book1.html">
+                        <img src="image/book1.jpg" alt="Book 1">
+                        <p>Cat Ninja</p>
+                    </a>
+                </div>
+                <div class="book-card">
+                    <a href="book2.html">
+                        <img src="image/book2.jpg" alt="Book 2">
+                        <p>Jasmine Home</p>
+                    </a>
+                </div>
+                <div class="book-card">
+                    <a href="book3.html">
+                        <img src="image/book3.jpg" alt="Book 3">
+                        <p>The Adventure Guz & Goz</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Section -->
+        <section id="book-progress">
+            <h2>Your Progress</h2>
+            <div class="progress-bar">
+                <p>Book: [Current Book Title]</p>
+                <div class="progress">
+                    <div class="progress-fill" style="width: 60%"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JavaScript for Username and Logout Functionality -->
+    <script src="dashscripts.js"></script>
+</body>
+</html>
